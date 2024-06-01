@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the project Name -->
+    <title>Intro Section With Dropdown Navigation Main</title>
+    <!-- Import the main css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import the icon of the Project -->
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <!-- Start the header html -->
+    <header>
+        <!-- start the left part of the header -->
+        <div class="head-section">
+            <!-- satrt the logo of the page -->
+            <div class="logo">
+                <img src="images/logo.svg">
+            </div>
+            <!-- end the logo of the page -->
+            <!-- start the nav bar for desktop -->
+            <div class="nav">
+                <ul class="main">
+                    <li class="features"><label for="features">Features</label>
+                        <input type="checkbox" id="features"></li>
+                    
+                    <ul class="features-menu">
+                        <li> <img src="images/icon-todo.svg"><a href="#">Todo List</a></li>
+                        <li><img src="images/icon-calendar.svg"><a href="#">Calender</a></li>
+                        <li><img src="images/icon-reminders.svg"><a href="#">Reminders</a></li>
+                        <li><img src="images/icon-planning.svg"><a href="#">Planning</a></li>
+                    </ul>
+                    <li class="company"><label for="company">Company</label>
+                        <input type="checkbox" id="company"></li></li>
+                    <ul class="company-menu">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <li><a href="#">Careers </a></li>
+                    <li><a href="#">About </a></li>
+                </ul>
+            </div>
+            <!-- end the nav bar for desktop -->
+        </div>
+        <!-- end the left part of the header -->
+        <!-- the right part of the header with the buttons -->
+        <div class="head-button">
+            <ul>
+                <li class="login"><a href="#">Login </a></li>
+                <li class="register"><a class="reg" href="#">Register </a></li>
+                <li onclick="openMenu()" class="menu-bar"><a href="#"><img src="images/icon-menu.svg"></a></li>
+            </ul>
+        </div>
+        <!-- end  the right part of the header with the buttons-->
+        <!-- start the nav bar for the mobile -->
+        <div class="nav-mob hide">
+            <div  class="close">
+                <img onclick="closeMenu()" src="images/icon-close-menu.svg">
+            </div>
+            <ul class="main">
+                <li class="features"><label for="features2">Features</label>
+                    <input type="checkbox" id="features2"></li>
+                
+                <ul class="features-menu2">
+                    <li> <img src="images/icon-todo.svg"><a href="#">Todo List</a></li>
+                    <li><img src="images/icon-calendar.svg"><a href="#">Calender</a></li>
+                    <li><img src="images/icon-reminders.svg"><a href="#">Reminders</a></li>
+                    <li><img src="images/icon-planning.svg"><a href="#">Planning</a></li>
+                </ul>
+                <li class="company"><label for="company2">Company</label>
+                    <input type="checkbox" id="company2"></li></li>
+                <ul class="company-menu2">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <li><a href="#">Careers </a></li>
+                <li><a href="#">About </a></li>
+            </ul>
+            <ul class="menu-btn">
+                <li class="login"><a href="#">Login </a></li>
+                <li class="register"><a class="reg" href="#">Register </a></li>
+            </ul>
+        </div>
+        <!-- end the nav bar for the mobile -->
+    </header>
+    <!-- end the header -->
+    <!-- start the landing  -->
+    <div class="landing">
+        <!-- start the image part -->
+        <div class="image">
+            <img class="desk-image" src="images/image-hero-desktop.png">
+            <img class="mob-image" src="images/image-hero-mobile.png">
+        </div>
+        <!-- end the image part -->
+        <!-- start the content part -->
+        <div class="content">
+            <div class="content-text">
+                <h1 class="head-desk">Make <br> remote work</h1>
+                <h1 class="head-mob">Make remote work</h1>
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="content-logo">
+                <img src="images/client-databiz.svg">
+                <img src="images/client-audiophile.svg">
+                <img src="images/client-meet.svg">
+                <img src="images/client-maker.svg">
+            </div>
+        </div>
+        <!-- end the content part -->
+    </div>
+        <!-- end the landing  -->
+    <script src="script.js"></script>
+</body>
+</html>
